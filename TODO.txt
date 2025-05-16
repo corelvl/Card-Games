@@ -1,0 +1,4 @@
+1.Make a tutorial
+2.Release alpha 1.0.0
+
+SIDE NOTE: Modify descriptions of files in readme.md as project grows.

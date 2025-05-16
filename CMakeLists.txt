@@ -1,0 +1,86 @@
+cmake_minimum_required(VERSION 3.31)
+project(Card-Games)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+include_directories(core/ASCII_cards)
+include_directories(core/ASCII_cards/clubs)
+include_directories(core/ASCII_cards/diamonds)
+include_directories(core/ASCII_cards/hearts)
+include_directories(core/ASCII_cards/spades)
+include_directories(core)
+include_directories(core/objects)
+include_directories(core/ui)
+include_directories(core/utilities)
+include_directories(core/games)
+include_directories(core/games/blackjack)
+include_directories(x64)
+
+add_executable(Card-Games
+        core/ASCII_cards/clubs/10.h
+        core/ASCII_cards/clubs/2.h
+        core/ASCII_cards/clubs/3.h
+        core/ASCII_cards/clubs/4.h
+        core/ASCII_cards/clubs/5.h
+        core/ASCII_cards/clubs/6.h
+        core/ASCII_cards/clubs/7.h
+        core/ASCII_cards/clubs/8.h
+        core/ASCII_cards/clubs/9.h
+        core/ASCII_cards/clubs/ace.h
+        core/ASCII_cards/clubs/jack.h
+        core/ASCII_cards/clubs/king.h
+        core/ASCII_cards/clubs/queen.h
+        core/ASCII_cards/diamonds/10.h
+        core/ASCII_cards/diamonds/2.h
+        core/ASCII_cards/diamonds/3.h
+        core/ASCII_cards/diamonds/4.h
+        core/ASCII_cards/diamonds/5.h
+        core/ASCII_cards/diamonds/6.h
+        core/ASCII_cards/diamonds/7.h
+        core/ASCII_cards/diamonds/8.h
+        core/ASCII_cards/diamonds/9.h
+        core/ASCII_cards/diamonds/ace.h
+        core/ASCII_cards/diamonds/jack.h
+        core/ASCII_cards/diamonds/king.h
+        core/ASCII_cards/diamonds/queen.h
+        core/ASCII_cards/hearts/10.h
+        core/ASCII_cards/hearts/2.h
+        core/ASCII_cards/hearts/3.h
+        core/ASCII_cards/hearts/4.h
+        core/ASCII_cards/hearts/5.h
+        core/ASCII_cards/hearts/6.h
+        core/ASCII_cards/hearts/7.h
+        core/ASCII_cards/hearts/8.h
+        core/ASCII_cards/hearts/9.h
+        core/ASCII_cards/hearts/ace.h
+        core/ASCII_cards/hearts/jack.h
+        core/ASCII_cards/hearts/king.h
+        core/ASCII_cards/hearts/queen.h
+        core/ASCII_cards/spades/10.h
+        core/ASCII_cards/spades/2.h
+        core/ASCII_cards/spades/3.h
+        core/ASCII_cards/spades/4.h
+        core/ASCII_cards/spades/5.h
+        core/ASCII_cards/spades/6.h
+        core/ASCII_cards/spades/7.h
+        core/ASCII_cards/spades/8.h
+        core/ASCII_cards/spades/9.h
+        core/ASCII_cards/spades/ace.h
+        core/ASCII_cards/spades/jack.h
+        core/ASCII_cards/spades/king.h
+        core/ASCII_cards/spades/queen.h
+        core/objects/cards.h
+        core/objects/characters.h
+        core/games/blackjack/ui_blackjack.h
+        core/utilities/utilities.h
+        core/games/blackjack/blackjack.h
+        core/games/blackjack/imports_blackjack.h
+        menu.cpp
+        readme.md
+        core/names/names.h
+        core/ai/blackjack/ai_blackjack.h
+        core/games/blackjack/blackjack_variables.h
+        core/games/blackjack/blackjack_functions.h
+        core/tutorials/blackjack/blackjack_tutorials.h
+        core/games/blackjack/blackjack_files.h)
